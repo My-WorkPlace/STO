@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {DateService} from '../shared/date.service';
+import {DateService} from '../../shared/date.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import { TasksService} from '../shared/tasks.service';
+import { TasksService} from '../../shared/tasks.service';
 import {switchMap} from 'rxjs/operators';
 import {Observable} from "rxjs";
-import {Task,Test2Service} from "../shared/test2.service";
+import {Task,Test2Service} from "../../shared/test2.service";
 
 @Component({
   selector: 'app-organizer',
@@ -16,7 +16,7 @@ export class OrganizerComponent implements OnInit {
   form: FormGroup
   tasks: Task[] = []
 
-  constructor(private dateService: DateService,
+  constructor(public dateService: DateService,
               private tasksService: Test2Service) {
   }
 

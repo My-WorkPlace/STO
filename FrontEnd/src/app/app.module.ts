@@ -12,6 +12,11 @@ import { AppComponent } from './app.component';
 
 import { HomeComponent } from './home';
 import { AlertComponent } from './_components/alert';
+import {CalendarComponent} from "./_components/calendar/calendar.component";
+import {SelectorComponent} from "./_components/selector/selector.component";
+import {MomentPipe} from "./shared/moment.pipe";
+import {OrganizerComponent} from "./_components/organizer/organizer.component";
+import {SheduleTaskComponent} from "./_components/sheduleTask/sheduleTask.component";
 // import { AlertComponent } from './_components/alert/alert.component';
 
 @NgModule({
@@ -24,7 +29,12 @@ import { AlertComponent } from './_components/alert';
     declarations: [
         AppComponent,
         AlertComponent,
-        HomeComponent
+        HomeComponent,
+      CalendarComponent,
+      SelectorComponent,
+      OrganizerComponent,
+      SheduleTaskComponent,
+      MomentPipe
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
