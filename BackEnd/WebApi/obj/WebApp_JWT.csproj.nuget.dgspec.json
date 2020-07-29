@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Falkon\\Desktop\\GitWork\\BackEnd\\WebApi\\WebApp_JWT.csproj": {}
+    "C:\\Users\\Falkon\\Desktop\\GitSTO\\BackEnd\\WebApi\\WebApp_JWT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Falkon\\Desktop\\GitWork\\BackEnd\\WebApi\\WebApp_JWT.csproj": {
+    "C:\\Users\\Falkon\\Desktop\\GitSTO\\BackEnd\\WebApi\\WebApp_JWT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Falkon\\Desktop\\GitWork\\BackEnd\\WebApi\\WebApp_JWT.csproj",
+        "projectUniqueName": "C:\\Users\\Falkon\\Desktop\\GitSTO\\BackEnd\\WebApi\\WebApp_JWT.csproj",
         "projectName": "WebApp_JWT",
-        "projectPath": "C:\\Users\\Falkon\\Desktop\\GitWork\\BackEnd\\WebApi\\WebApp_JWT.csproj",
+        "projectPath": "C:\\Users\\Falkon\\Desktop\\GitSTO\\BackEnd\\WebApi\\WebApp_JWT.csproj",
         "packagesPath": "C:\\Users\\Falkon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Falkon\\Desktop\\GitWork\\BackEnd\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\Falkon\\Desktop\\GitSTO\\BackEnd\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -58,10 +58,6 @@
               "version": "[3.1.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[3.1.5, )"
             },
