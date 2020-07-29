@@ -12,5 +12,7 @@ namespace WebApp_JWT.Helpers
     }
     
     public DbSet<User> Users { get; set; }
+
+    public DbSet<SheduleTask> Tasks { get; set; }
   }
 }
