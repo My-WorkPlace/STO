@@ -17,6 +17,7 @@ import {SelectorComponent} from "./_components/selector/selector.component";
 import {MomentPipe} from "./shared/moment.pipe";
 import {OrganizerComponent} from "./_components/organizer/organizer.component";
 import {SheduleTaskComponent} from "./_components/sheduleTask/sheduleTask.component";
+import {ClientComponent} from "./_components/client/client.component";
 // import { AlertComponent } from './_components/alert/alert.component';
 
 @NgModule({
@@ -34,6 +35,7 @@ import {SheduleTaskComponent} from "./_components/sheduleTask/sheduleTask.compon
       SelectorComponent,
       OrganizerComponent,
       SheduleTaskComponent,
+      ClientComponent,
       MomentPipe
     ],
     providers: [
