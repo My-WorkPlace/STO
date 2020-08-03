@@ -5,6 +5,8 @@ import { TasksService} from '../../shared/tasks.service';
 import {switchMap} from 'rxjs/operators';
 import {Observable} from "rxjs";
 import {Task,Test2Service} from "../../shared/test2.service";
+import {User} from "../../_models";
+import {AccountService} from "../../_services";
 
 @Component({
   selector: 'app-organizer',
@@ -17,7 +19,8 @@ export class OrganizerComponent implements OnInit {
   tasks: Task[] = []
 
   constructor(public dateService: DateService,
-              private tasksService: Test2Service) {
+              private tasksService: Test2Service,
+              ) {
   }
 
   ngOnInit() {
@@ -35,7 +38,7 @@ export class OrganizerComponent implements OnInit {
       title,
       DateTime: this.dateService.date.value.format('DD-MM-YYYY')
     }
-
+    console.log(task)
     this.tasksService.create(task).subscribe(task => {
       this.tasks.push(task)
       this.form.reset()

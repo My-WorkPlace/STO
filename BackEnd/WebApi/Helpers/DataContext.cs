@@ -12,7 +12,10 @@ namespace WebApp_JWT.Helpers
     }
     
     public DbSet<User> Users { get; set; }
-
-    public DbSet<SheduleTask> Tasks { get; set; }
+    public DbSet<Car> Cars { get; set; }
+    public DbSet<CarDetail> CarDetails { get; set; }
+    public DbSet<BrandCar> BrandCars { get; set; }
+    public DbSet<BrandDetail> Details { get; set; }
+    public DbSet<ScheduleTask> Tasks { get; set; }
   }
 }

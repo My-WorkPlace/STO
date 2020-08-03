@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 section {
   border: 1px solid #000;
   padding: 1rem;
@@ -15,3 +17,65 @@ section {
   border: 1px solid #ccc;
   margin-bottom: .5rem;
 }
+
+//cod style from schedule task
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  &:hover {
+    color: #666;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: .4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: .5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+table th {
+  background: var(--light-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+

@@ -21,7 +21,10 @@
 
   <footer>
     <form (ngSubmit)="submit()" [formGroup]="form">
-      <input type="text" formControlName="title">
+      <input type="text"
+             formControlName="title"
+             placeholder="new Task"
+      >
 
       <button
         type="submit"

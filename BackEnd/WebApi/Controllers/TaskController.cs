@@ -18,7 +18,7 @@ namespace WebApp_JWT.Controllers
     }
 
     [HttpPost("create")]
-    public IActionResult Create([FromBody] SheduleTask model)
+    public IActionResult Create([FromBody] ScheduleTask model)
     {
 
       try
@@ -41,14 +41,14 @@ namespace WebApp_JWT.Controllers
     }
 
     [HttpPost("GetByDate")]
-    public IActionResult GetByDate([FromBody]SheduleTask model)
+    public IActionResult GetByDate([FromBody]ScheduleTask model)
     {
       var tasks = _taskService.GetByDate(model.DateTime);
       return Ok(tasks);
     }
 
     [HttpPut]
-    public IActionResult Update([FromBody]SheduleTask model)
+    public IActionResult Update([FromBody]ScheduleTask model)
     {
       try
       {
@@ -71,7 +71,7 @@ namespace WebApp_JWT.Controllers
     }
 
     [HttpPost("{DeleteObj}")]
-    public IActionResult DeleteObj([FromBody]SheduleTask model)
+    public IActionResult DeleteObj([FromBody]ScheduleTask model)
     {
       _taskService.DeleteObj(model);
       return Ok();
